@@ -25,14 +25,6 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../sites/default/themes/custom/health/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../sites/default/themes/custom/health/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../sites/default/themes/custom/health/favicon-16x16.png">
-  <script type="text/javascript">
-    var $html = document.documentElement;
-    if ($html.classList) $html.classList.remove("no-js"), $html.classList.add("js");
-    else {
-      var className = "no-js";
-      $html.className = $html.className.replace(new RegExp("(^|\\b)" + className.split(" ").join("|") + "(\\b|$)", "gi"), " "), $html.className += " js"
-    }
-  </script>
   <!--[if lt IE 9]>
     <script src="../sites/default/themes/custom/health/js/html5shiv.min.js"></script>
     <![endif]-->
@@ -44,11 +36,9 @@
   <!--[if gt IE 9]><!-->
   <link type="text/css" rel="stylesheet" href="../sites/default/files/css/css_styles.css" media="all" />
   <!--<![endif]-->
-
 </head>
 
 <body class="html front not-logged-in no-sidebars page-node page-node- page-node-1461 node-type-landing-page">
-  <!-- End Google Tag Manager (noscript) -->
   <nav class="skip-link" id="skip-link">
     <a class="skip-link__link" href="#content">Skip to main content</a>
     <a class="skip-link__link" href="#nav">Skip to main navigation</a>
@@ -95,7 +85,7 @@
       </div>
     </header>
 
-    <!-- mobile nav -->
+    <!-- nav -->
     <nav id="nav" class="region region-navigation">
       <div class="container">
         <div class="row">
@@ -133,68 +123,55 @@
         </div>
       </div>
     </nav>
-    <!-- end mobile nav -->
+    <!-- END: nav -->
 
+    <!-- Whole Page -->
     <div class="page-content" id="page-content">
-      <div class="page-layout">
-        <div class="row">
-          <div class="page-tools-full">
-            <div class="page-tools-wrapper">
-              <div class="page-tools-content">
-              </div>
+
+      <!-- Header and Breadcrumbs -->
+      <div class="page-title header header--light">
+        <div class="container">
+          <div class="row">
+            <div class="page-title__core col full">
+              <nav class="breadcrumbs rs_skip" role="navigation">
+                <h2 class="element-invisible">You are here</h2>
+                <ol class="breadcrumbs__list">
+                  <li><a href="../">Home</a></li>
+                  <li>Data Tool</li>
+                </ol>
+              </nav>
+              <h1 class="uikit-header-heading">
+                Data Tool
+              </h1>
+              <p class="summary">A interactive tool for querying Australia's Health Wrokforce Datasets.</p>
             </div>
           </div>
+        </div>
+      </div>
+      <!-- END: Header and Breadcrumbs -->
+
+      <div class="page-layout">
+        <div class="row">
           <main class="main-content-full" id="content" role="main">
-            <div id="tabs" class="rs_skip"></div>
             <div class="region region-content">
-              <div about="/home" typeof="sioc:Item foaf:Document" class="ds-1col node node-landing-page view-mode-full  clearfix">
-                <div class="wrapper">
-                  <div class="paragraphs-items paragraphs-items-field-components paragraphs-items-field-components-full paragraphs-items-full">
-                    <div class="field field-name-field-components field-type-paragraphs field-label-hidden">
-                      <div class="field-items">
-                        <div class="field-item even">
-                          <div class="para-container entity entity-paragraphs-item paragraphs-item-para-block block__count--1 block-id__homepage-about-us view-mode-full ">
-                            <div about="" typeof="" class="inside-para-container ds-1col entity entity-paragraphs-item paragraphs-item-para-block block__count--1 block-id__homepage-about-us view-mode-full  clearfix">
-                              <div class="para-row">
-                                <div class="block block-bean first odd block-bean-basic-content" id="block-bean-homepage-about-us">
-                                  <div class="entity entity-bean bean-basic-content homepage-about-us clearfix" about="/block/homepage-about-us" typeof="">
-                                    <div class="field field-name-field-bean-body field-type-text-long field-label-hidden">
-                                      <div class="field-items">
-                                        <div class="field-item even">
-                                          <h2>
-                                            Data Tool
-                                          </h2>
-                                          <p>If you do not already have an account, please register to access the tool.</p>
-                                          <p>
-                                          <div class="entity entity-bean bean-basic-content feedback-band clearfix" about="/block/feedback-band" typeof="">
-                                            <div class="feedback-band">
-                                              <div class="feedback-col link">
-                                                <div class="feedback-col-link">
-                                                  <a href="./about-the-handbook/provide-feedback">Login</a>
-                                                  <a href="./about-our-new-website">Register</a>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- PANEL: Datatool login register -->
-                        <div class="field-item odd">
-                          <div class="para-container entity entity-paragraphs-item paragraphs-item-para-block block__count--1 block-id__feedback-band view-mode-full ">
-                            <div about="" typeof="" class="inside-para-container ds-1col entity entity-paragraphs-item paragraphs-item-para-block block__count--1 block-id__feedback-band view-mode-full  clearfix">
-
-                            </div>
+              <div class="wrapper">
+                <div class="para-container entity entity-paragraphs-item block-id__homepage-about-us view-mode-full ">
+                  <div id="block-bean-homepage-about-us">
+                    <div class="bean-basic-content feedback-band clearfix" about="/block/feedback-band" typeof="">
+                      <!-- Buttons intented -->
+                      <div class="feedback-band">
+                        <div class="feedback-col link">
+                          <div class="feedback-col-link">
+                            <a href="./about-the-handbook/provide-feedback">Login</a>
+                            <a href="./about-our-new-website">Register</a>
                           </div>
                         </div>
                       </div>
+                      <!-- END: Buttons indented -->
+                      <p>
+                        If you do not already have an account, please register to access the tool.<br />
+                        By registering you agree to our terms of service
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -204,6 +181,7 @@
         </div>
       </div>
 
+      <!-- Share This -->
       <div class="region region-content-bottom">
         <div class="block block-bean first last odd block-bean-basic-content" id="block-bean-share-this">
           <div class="container">
@@ -232,6 +210,7 @@
           </div>
         </div>
       </div>
+      <!-- END: Share This -->
     </div>
 
     <!-- footer -->
